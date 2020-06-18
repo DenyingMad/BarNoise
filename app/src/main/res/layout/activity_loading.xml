@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.LoadingActivity"
-    android:background="@android:color/holo_red_light">
+    android:background="@android:color/background_dark">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -13,5 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginHorizontal="50dp"/>
+        android:layout_marginHorizontal="50dp"
+        android:progressBackgroundTint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:progressTint="@android:color/holo_red_dark"/>
 </RelativeLayout>

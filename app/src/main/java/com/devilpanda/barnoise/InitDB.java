@@ -50,7 +50,7 @@ public class InitDB extends AsyncTask<Void, Integer, Void> {
         progress+=10;
         publishProgress(progress);
         try {
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.MILLISECONDS.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -76,7 +76,7 @@ public class InitDB extends AsyncTask<Void, Integer, Void> {
         progress += 20;
         publishProgress(progress);
         try {
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.MILLISECONDS.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -105,7 +105,7 @@ public class InitDB extends AsyncTask<Void, Integer, Void> {
         progress += 20;
         publishProgress(progress);
         try {
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.MILLISECONDS.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
