@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.devilpanda.barnoise.R;
 import com.devilpanda.barnoise.adapters.HomeAdapter;
@@ -16,7 +18,10 @@ import com.devilpanda.barnoise.model.SubjectDao;
 
 import java.util.List;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements HomeAdapter.OnCategoryListener {
+
+    private static final String TAG = "HomeActivity";
+
     private SubjectDao dao;
     private HomeAdapter homeAdapter;
     private RecyclerView recyclerView;
@@ -42,12 +47,19 @@ public class HomeActivity extends AppCompatActivity {
         a.execute();
     }
 
+    @Override
+    public void onListener(int position) {
+        Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
+        intent.putExtra("category", position);
+        startActivity(intent);
+    }
+
     class RecyclerViewInit extends AsyncTask<Void, Void, Void>{
 
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            homeAdapter = new HomeAdapter(HomeActivity.this, categoryList);
+            homeAdapter = new HomeAdapter(HomeActivity.this, categoryList, HomeActivity.this);
             recyclerView.setAdapter(homeAdapter);
         }
 

@@ -11,7 +11,6 @@ import com.devilpanda.barnoise.model.Category;
 import com.devilpanda.barnoise.model.Subject;
 import com.devilpanda.barnoise.model.SubjectDao;
 import com.devilpanda.barnoise.view.HomeActivity;
-import com.devilpanda.barnoise.view.LoadingActivity;
 
 import java.lang.ref.WeakReference;
 import java.util.concurrent.TimeUnit;
@@ -58,7 +57,7 @@ public class InitDB extends AsyncTask<Void, Integer, Void> {
         // Setting up categories
         String[] categories = context.get().getResources().getStringArray(R.array.categories);
         for (int i = 0; i < categories.length; i++){
-            dao.insertCategories(new Category(i, categories[i]));
+            dao.insertCategory(new Category(i, categories[i]));
         }
 
         progress+=10;

@@ -18,17 +18,19 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
     private Context context;
     private List<Category> categories;
+    private OnCategoryListener onCategoryListener;
 
-    public HomeAdapter(Context context, List<Category> categories){
+    public HomeAdapter(Context context, List<Category> categories, OnCategoryListener onCategoryListener){
         this.categories = categories;
         this.context = context;
+        this.onCategoryListener = onCategoryListener;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_home, parent, false);
-        return new ViewHolder(view);
+        return new ViewHolder(view, onCategoryListener);
     }
 
     @Override
@@ -41,12 +43,25 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         return categories.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder{
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
+        private OnCategoryListener listener;
         private TextView textView;
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView, OnCategoryListener listener) {
             super(itemView);
+            this.listener = listener;
             textView = itemView.findViewById(R.id.home_button_name);
+
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View v) {
+            listener.onListener(getAdapterPosition());
+        }
+    }
+
+    public interface OnCategoryListener{
+        public void onListener(int position);
     }
 }

@@ -4,8 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.CategoryActivity"
-    android:background="@android:color/holo_red_light">
+    tools:context=".view.CategoryActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:tint="#4D000000"/>
 
     <TextView
         android:id="@+id/category_title"
@@ -23,6 +29,7 @@
         android:id="@+id/category_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/category_title"/>
+        android:layout_below="@id/category_title"
+        android:layout_marginHorizontal="20dp"/>
 
 </RelativeLayout>

@@ -41,51 +41,5 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"/>
 
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginHorizontal="20dp"-->
-<!--            android:orientation="vertical">-->
-
-<!--            <Button-->
-<!--                android:id="@+id/low_alcohol"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginVertical="10dp"-->
-<!--                android:background="@android:color/holo_red_dark"-->
-<!--                android:text="Low Alcohol"-->
-<!--                android:textColor="@android:color/white"-->
-<!--                android:textSize="20sp" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/mid_alcohol"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginVertical="10dp"-->
-<!--                android:background="@android:color/holo_red_dark"-->
-<!--                android:text="Medium Alcohol"-->
-<!--                android:textColor="@android:color/white"-->
-<!--                android:textSize="20sp" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/strong_alcohol"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginVertical="10dp"-->
-<!--                android:background="@android:color/holo_red_dark"-->
-<!--                android:text="Strong Alcohol"-->
-<!--                android:textColor="@android:color/white"-->
-<!--                android:textSize="20sp" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/moonshine"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginVertical="10dp"-->
-<!--                android:background="@android:color/holo_red_dark"-->
-<!--                android:text="Moonshine"-->
-<!--                android:textColor="@android:color/white"-->
-<!--                android:textSize="20sp" />-->
-<!--        </LinearLayout>-->
     </LinearLayout>
 </RelativeLayout>
