@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Bar Noise</string>
+
+    <string-array name="categories">
+        <item>Low Alcohol</item>
+        <item>Medium Alcohol</item>
+        <item>Strong Alcohol</item>
+        <item>Moonshine</item>
+    </string-array>
+
+
+    <!-- Low Alcohole -->
+    <!-- Titles -->
+    <string-array name="low_subjects_titles">
+        <item>Low Test</item>
+    </string-array>
+    <!-- Descriptions -->
+    <string-array name="low_subjects_desc">
+        <item>Description for low test.</item>
+    </string-array>
+    <!-- Problems -->
+    <string-array name="low_subjects_problem">
+        <item>First problem for low test.\nSecond problem for low test.</item>
+    </string-array>
+    <!-- Facts (should be empty if doesn't need it) -->
+    <string-array name="low_subjects_facts">
+        <item>Just one fact.</item>
+    </string-array>
+
+
+    <!-- Mid Alcohole -->
+    <!-- Titles -->
+    <string-array name="mid_subjects_titles">
+        <item>Mid Test</item>
+    </string-array>
+    <!-- Descriptions -->
+    <string-array name="mid_subjects_desc">
+        <item>Description for mid test.</item>
+    </string-array>
+    <!-- Problems -->
+    <string-array name="mid_subjects_problem">
+        <item>First problem for mid test.\nSecond problem for mid test.</item>
+    </string-array>
+    <!-- Facts (should be empty if doesn't need it) -->
+    <string-array name="mid_subjects_facts">
+        <item>Just one more fact.</item>
+    </string-array>
+
+
+    <!-- Strong Alcohole -->
+    <!-- Titles -->
+    <string-array name="strong_subjects_titles">
+        <item>Agent 007 Pushkin</item>
+    </string-array>
+    <!-- Descriptions -->
+    <string-array name="strong_subjects_desc">
+        <item>Do you know that Pushkin is Duma?</item>
+    </string-array>
+    <!-- Problems -->
+    <string-array name="strong_subjects_problem">
+        <item>First problem for strong test.\nSecond problem for strong test.</item>
+    </string-array>
+    <!-- Facts (should be empty if doesn't need it) -->
+    <string-array name="strong_subjects_facts">
+        <item>Pushkin and the Duma are very similar\nOnly after the death of Pushkin, the work of Dumas became popular\nand etc.</item>
+    </string-array>
+
+
+    <!-- Moonshine -->
+    <!-- Titles -->
+    <string-array name="moonshine_subjects_titles">
+        <item>Don\'t do this, man.</item>
+    </string-array>
+    <!-- Descriptions -->
+    <string-array name="moonshine_subjects_desc">
+        <item>Really, you don\'t need this.</item>
+    </string-array>
+    <!-- Problems -->
+    <string-array name="moonshine_subjects_problem">
+        <item>Your decision already is a problem.</item>
+    </string-array>
+    <!-- Facts (should be empty if doesn't need it) -->
+    <string-array name="moonshine_subjects_facts">
+        <item></item>
+    </string-array>
+
+
+</resources>
